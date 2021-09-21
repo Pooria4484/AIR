@@ -16,11 +16,12 @@ oled=SSD1306_I2C(128, 64, i2c, 0x3c,dir=False)
 oled.fill(0)
 freq(240000000)
 print('fr-->',freq())
-
+up=Pin(33,Pin.IN)
+if up()==1:
+    flag=b"True"
 ################################
-flag=b"True"
-save("link",'https://github.com/Pooria4484/AIR')
-print(load("link").decode('utf-8'))
+#save("link",'https://github.com/Pooria4484/AIR')
+#print(load("link").decode('utf-8'))
 ################################
 if flag==b"True":
     oled.text('UPDATING',32,29)

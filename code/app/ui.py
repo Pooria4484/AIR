@@ -138,8 +138,8 @@ class UI:
         self.wdt=wdt
         self.oled=oled
         self.err=False
-        self.temp=25.0
-        self.hum=55.0
+        self.temp=0.0
+        self.hum=0.0
         self.enum=0
         self.page=0
         self.item=0
